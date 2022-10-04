@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+//in order to 1 rem to be 10 px not 16 so
+//we need to 10/16 *100%
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  display: grid;
+  //10 col:
+  grid-template-columns:
+    minmax(6rem, 1fr) repeat(8, minmax(min-content, 16rem))
+    minmax(6rem, 1fr);
+  // 4 rows:
+  grid-template-rows: repeat(4, min-content);
+  row-gap: 1.6rem;
+  background-color: color(tertiary);
+}
