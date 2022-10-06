@@ -8,6 +8,17 @@
 //we need to 10/16 *100%
 html {
   font-size: 62.5%;
+
+  @include response(md) {
+    //want 1 rem = 9px
+    font-size: 56.25%;
+  }
+
+  @include response(sm) {
+    //want 1 rem = 8px
+    //8/16
+    font-size: 50%;
+  }
 }
 
 .container {
